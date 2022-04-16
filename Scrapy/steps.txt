@@ -1,0 +1,14 @@
+
+1. TO fetch data: 
+	r = scrapy.Request(url="https://www.worldometers.info/world-population/population-by-country/")
+	fetch(r)
+OR:
+	fetch("https://www.worldometers.info/world-population/population-by-country/")
+
+2. To start a project:
+	scrapy startproject tinydeal	
+	cd: tinydeal	
+	to create_new_spider: scrapy genspider special_offers "url(remove https)"
+	set spider (xpath/css_selector)
+
+	scrapy crawl special_offers 
